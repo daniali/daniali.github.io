@@ -1,3 +1,54 @@
-img {
-  image-orientation: from-image;
+@font-face {
+  font-family: "amatic";
+  src: url('../fonts/amatic.tff');
 }
+
+@font-face {
+  font-family: "amatic-bold";
+  src: url('../fonts/amatic-bold.tff');
+}
+
+html, body {
+  height: 90%;
+  margin: 2.5%;
+  padding: 0;
+  width: 95%;
+}
+
+body {
+  display: table;
+}
+
+.centreText {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fadein {
+  -webkit-animation: fadein 2s;
+}
+
+.fadeout {
+  -webkit-animation-delay:5s;
+  -webkit-animation: fadeout 2s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    70% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeout {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.message {
+  font-family: 'amatic-bold';
+  font-size: 1000%;
+}
+
