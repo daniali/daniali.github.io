@@ -27,11 +27,11 @@ body {
 
 .fadein {
   -webkit-animation: fadein 2s;
+  -webkit-animation-fill-mode: forwards;
 }
 
 .fadeout {
-  -webkit-animation-delay:5s;
-  -webkit-animation: fadeout 2s;
+  -webkit-animation: fadeout 10s;
   -webkit-animation-fill-mode: forwards;
 }
 
@@ -43,7 +43,7 @@ body {
 
 @-webkit-keyframes fadeout {
     0% { opacity: 1; }
-    70% { opacity: 1; }
+    80% { opacity: 1; }
     100% { opacity: 0; }
 }
 
